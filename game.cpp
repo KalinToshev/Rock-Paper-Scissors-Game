@@ -37,6 +37,20 @@ int main()
 
         //Randomly generate the AI throw
         aiThrow = (rand() % 3) + 1;
+
+        //Output the AI throw so that way the player knows what it is
+        if (aiThrow == ROCK)
+        {
+            cout << "AI throws ROCK." << endl;
+        }
+        else if (aiThrow == PAPER)
+        {
+            cout << "AI throws PAPER." << endl;
+        }
+        else if (aiThrow == SCISSORS)
+        {
+            cout << "AI throws SCISSORS." << endl;
+        }
     } 
     while (draw);
 
