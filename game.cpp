@@ -13,5 +13,8 @@ int main()
     //Seed the random number generator
     srand((unsigned int) time(NULL));
 
+    //Create variables to store the player and AI throw
+    int playerThrow = 0, aiThrow = 0;
+
     return 0;
 }
