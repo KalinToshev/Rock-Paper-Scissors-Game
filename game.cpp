@@ -51,6 +51,57 @@ int main()
         {
             cout << "AI throws SCISSORS." << endl;
         }
+
+        //Check the result of the games based on the player and AI throws
+
+        /*
+        Set the draw to false initially 
+        and then only set it to true 
+        if the game does end in a draw
+        */
+        draw = false;
+
+        /*
+        Check if the game ended in a draw
+        otherwise check all the other possibilities 
+        for the state of the game
+        */
+        if (playerThrow == aiThrow)
+        {
+            draw = true;
+            cout << "Draw! Play again!" << endl;
+        }
+        else if (playerThrow == ROCK && aiThrow == SCISSORS)
+        {
+            cout << "ROCK beats SCISSORS! YOU WIN." << endl;
+        }
+        else if (playerThrow == ROCK && aiThrow == PAPER)
+        {
+            cout << "PAPER beats ROCK! YOU LOSE." << endl;
+        }
+        else if (playerThrow == PAPER && aiThrow == ROCK)
+        {
+            cout << "PAPER beats ROCK! YOU WIN." << endl;
+        }
+        else if (playerThrow == PAPER && aiThrow == SCISSORS)
+        {
+            cout << "SCISSORS beats PAPER! YOU LOSE." << endl;
+        }
+        else if (playerThrow == SCISSORS && aiThrow == PAPER)
+        {
+            cout << "SCISSORS beats PAPER! YOU WIN." << endl;
+        }
+        else if (playerThrow == SCISSORS && aiThrow == ROCK)
+        {
+            cout << "ROCK beats SCISSORS! YOU LOSE." << endl;
+        }
+
+        /*
+        Output endline just in case the menu is 
+        presented to the user again 
+        in the case of a draw
+        */
+        cout << endl;
     } 
     while (draw);
 
