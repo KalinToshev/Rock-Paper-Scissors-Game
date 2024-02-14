@@ -16,5 +16,9 @@ int main()
     //Create variables to store the player and AI throw
     int playerThrow = 0, aiThrow = 0;
 
+    //This variable is going to keep track of 
+    //whether or not the last game ended in a draw
+    bool draw = false;
+
     return 0;
 }
