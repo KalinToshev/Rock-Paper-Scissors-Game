@@ -10,7 +10,8 @@ using namespace std;
 
 int main()
 {
-
+    //Seed the random number generator
+    srand((unsigned int) time(NULL));
 
     return 0;
 }
