@@ -31,6 +31,12 @@ int main()
         cout << "3) Scissors" << endl;
         cout << "Selection: ";
         cin >> playerThrow;
+
+        //Output an inline to separate the user input from the game output
+        cout << endl;
+
+        //Randomly generate the AI throw
+        aiThrow = (rand() % 3) + 1;
     } 
     while (draw);
 
