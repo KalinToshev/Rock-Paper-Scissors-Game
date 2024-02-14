@@ -20,5 +20,13 @@ int main()
     //whether or not the last game ended in a draw
     bool draw = false;
 
+    //Loop to continually have the user enter in their throw, 
+    //until there is a winner of the game
+    do
+    {
+        
+    } 
+    while (draw);
+    
     return 0;
 }
