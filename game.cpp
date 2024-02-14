@@ -24,9 +24,15 @@ int main()
     //until there is a winner of the game
     do
     {
-        
+        //Prompt the player to enter in their throw
+        cout << "Select your throw." << endl;
+        cout << "1) Rock" << endl;
+        cout << "2) Paper" << endl;
+        cout << "3) Scissors" << endl;
+        cout << "Selection: ";
+        cin >> playerThrow;
     } 
     while (draw);
-    
+
     return 0;
 }
